@@ -362,7 +362,7 @@
                 if (displayedCardsCount <= totalCards) {
                     const isCorrect = button.getAttribute('data-correct') === 'true';
                     const resultText = document.createElement('div');
-                    resultText.textContent = displayedCardsCount + '問:' +
+                    resultText.textContent = displayedCardsCount + '問' +
                         (isCorrect ? '⭕️' : '❌');
                     resultText.className = isCorrect ? 'text-green-600' : 'text-red-600';
                     displayArea.appendChild(resultText);
