@@ -20,22 +20,22 @@ return new class extends Migration
 //            $table->renameColumn('basic_select', 'small_label_id_basic_selected');
 
             // カラム 'small_label_id_basic_selected' の後に 'commontag_id' を追加
-            $table->unsignedBigInteger('commontag_id')->after('basic_select');
+            $table->unsignedBigInteger('commontag_id')->nullable()->after('basic_select');
             // 'commontag_id' に対して 'common_tags' テーブルの 'id' を参照する外部キーを追加
             $table->foreign('commontag_id')->references('id')->on('common_tags');
             // 'commontag_selected' カラムを 'commontag_id' の後に追加（boolean型）
-            $table->boolean('commontag_selected')->after('commontag_id');
+            $table->boolean('commontag_selected')->nullable()->after('commontag_id');
             // 'commontag_basic_selected' カラムを 'commontag_selected' の後に追加（boolean型）
-            $table->boolean('commontag_basic_selected')->after('commontag_selected');
+            $table->boolean('commontag_basic_selected')->nullable()->after('commontag_selected');
 
             // カラム 'commontag_basic_selected' の後に 'individualtag_id' を追加
-            $table->unsignedBigInteger('individualtag_id')->after('commontag_basic_selected');
+            $table->unsignedBigInteger('individualtag_id')->nullable()->after('commontag_basic_selected');
             // 'individualtag_id' に対して 'individual_tags' テーブルの 'id' を参照する外部キーを追加
             $table->foreign('individualtag_id')->references('id')->on('individual_tags');
             // 'individualtag_selected' カラムを 'individualtag_id' の後に追加（boolean型）
-            $table->boolean('individualtag_selected')->after('individualtag_id');
+            $table->boolean('individualtag_selected')->nullable()->after('individualtag_id');
             // 'individualtag_basic_selected' カラムを 'individualtag_selected' の後に追加（boolean型）
-            $table->boolean('individualtag_basic_selected')->after('individualtag_selected');
+            $table->boolean('individualtag_basic_selected')->nullable()->after('individualtag_selected');
         });
     }
 
