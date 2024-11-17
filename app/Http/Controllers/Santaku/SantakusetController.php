@@ -69,7 +69,7 @@ class SantakusetController extends Controller
         // dump($sortedSummary);
 
         // ログインしたユーザーの選んだジャンルを呼び出し、Eagerロードのためにwith([ミドルラベル、ラージラベル])してdbへのアクセスを少なくする
-        $selectList = LabelStorages::where('user_id', $id)->with('smallLabel.middleLabel.largeLabel')->get();
+        $selectList = LabelStorages::where('user_id', $id)->with('smallLabel.middleLabel.largeLabel','smallLabel.individualtag')->get();
 //dump($selectList);
         $smalelabelList = SmallLabel::all();
 //dd($smalelabelList);
@@ -82,6 +82,12 @@ class SantakusetController extends Controller
                     $selectNewList->small_label_id = $item->id; // small_label_idを登録
                     $selectNewList->selected = 1; // 中分類を選んだ状態の「1」を登録
                     $selectNewList->basic_select = 1; // basic中分類を選んだ状態の「1」を登録
+                    $selectNewList->commontag_id = $item->id; // small_label_idを登録
+                    $selectNewList->commontag_selected = 1; // 中分類を選んだ状態の「1」を登録
+                    $selectNewList->commontag_basic_select = 1; // basic中分類を選んだ状態の「1」を登録
+                    $selectNewList->individualtag_id = $item->id; // small_label_idを登録
+                    $selectNewList->individualtag_selected = 1; // 中分類を選んだ状態の「1」を登録
+                    $selectNewList->individualtag_basic_select = 1; // basic中分類を選んだ状態の「1」を登録
                     $selectNewList->save();
 
                 }
@@ -196,7 +202,7 @@ $answerCountsBySmallLabel = AnswerResults::where('answer_results.user_id', $id)
             }
         }
 
-//dump($selectList);
+dump($selectList);
 //dump($largelabelList);
 //dump($middlelabelList);
 

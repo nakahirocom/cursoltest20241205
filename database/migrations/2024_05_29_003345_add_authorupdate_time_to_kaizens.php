@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::table('kaizens', function (Blueprint $table) {
             // timestampとは別に時間を記録するカラムを追加
-            $table->timestamp('developer_comment_update_time')->nullable()->precision(3)->after('developer_comment');
+            $table->timestamp('developer_comment_update_time')->nullable()->after('developer_comment');
         });
     }
 

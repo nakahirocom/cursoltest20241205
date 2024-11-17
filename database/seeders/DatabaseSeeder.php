@@ -20,13 +20,13 @@ class DatabaseSeeder extends Seeder
             MiddleLabelSeeder::class,
             SmallLabelSeeder::class,
             UsersSeeder::class,
+            CommonTagSeeder::class,
+            individualTagSeeder::class,
             LabelStorageSeeder::class,
             QuestionSeeder::class,
             AnswerResultsSeeder::class,
             KaizenSeeder::class,
             MymemoSeeder::class
-
-
 
         ]);
         // \App\Models\User::factory()->create([
