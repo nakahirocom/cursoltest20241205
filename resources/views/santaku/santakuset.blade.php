@@ -11,10 +11,20 @@
 
 <body class="bg-gradient-to-r from-pink-100 via-blue-100 to-purple-100 px-4 sm:px-8 lg:px-64">
     @auth
-    <div class="flex justify-end items-center my-4">
-        <a class="text-gray-500 hover:text-gray-700 underline decoration-gray-500 hover:decoration-blue-700 transition duration-300 ease-in-out"
-            href="/">HOMEへ</a>
+    <div class="flex justify-between items-center">
+        <!-- ジャンル表示と連続正解数を含む新しいdivを追加 -->
+        <div class="flex items-center">
+        ジャンル選択
+        </div>
+        <div id="total">対象問題数: 0</div>
+
+        <!-- HOMEへのリンク -->
+        <div>
+            <a class="btn btn-link text-gray-500 hover:text-gray-700 underline decoration-gray-500 hover:decoration-blue-700 transition duration-300 ease-in-out"
+                href="/">HOMEへ</a>
+        </div>
     </div>
+
     @endauth
 
     <div class="container mx-auto">
@@ -28,8 +38,6 @@
                     <br>
                     10題以上回答したジャンルが対象
                     <br>
-                    <div id="total">対象問題数: 0</div>
-
                     <!-- 星の数:各ジャンル正解率順に1位⭐️5個〜5位⭐️1個まで。同率は平均回答時間短い順) -->
                 </div>
                 <button type="button" onclick="toggleAllCheckboxes()"
@@ -72,7 +80,22 @@
                                 {{ $user_select->smallLabel->small_label }} (登録{{ $user_select->small_question_count
                                 }}件)
 
-                            </label>
+<div>
+    <details class="mb-2">
+        <summary class="cursor-pointer bg-blue-500 text-white px-2 py-1 rounded">
+            タグを表示
+        </summary>
+        <div class="mt-2">
+            @if (isset($user_select->smallLabel->individualtag) && $user_select->smallLabel->individualtag->isNotEmpty())
+                @foreach ($user_select->smallLabel->individualtag as $tag)
+                    <div>{{ $tag->individualtag }}</div>
+                @endforeach
+            @else
+                <div>タグがありません</div>
+            @endif
+        </div>
+    </details>
+</div>                            </label>
                             @if ($user_select->answer_count >= 10)
                             🎴 今週{{ $user_select->answer_count }}題回答
                             <br>
