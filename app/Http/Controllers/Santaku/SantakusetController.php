@@ -69,8 +69,8 @@ class SantakusetController extends Controller
         // dump($sortedSummary);
 
         // ログインしたユーザーの選んだジャンルを呼び出し、Eagerロードのためにwith([ミドルラベル、ラージラベル])してdbへのアクセスを少なくする
-        $selectList = LabelStorages::where('user_id', $id)->with('smallLabel.middleLabel.largeLabel')->get();
-//dump($selectList);
+        $selectList = LabelStorages::where('user_id', $id)->with('smallLabel.middleLabel.largeLabel','smallLabel.individualtag')->get();
+//dd($selectList);
         $smalelabelList = SmallLabel::all();
 //dd($smalelabelList);
         // 両方のリストの数を比較
@@ -196,7 +196,7 @@ $answerCountsBySmallLabel = AnswerResults::where('answer_results.user_id', $id)
             }
         }
 
-//dump($selectList);
+dump($selectList);
 //dump($largelabelList);
 //dump($middlelabelList);
 

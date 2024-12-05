@@ -29,6 +29,11 @@ class SmallLabel extends Model
     {
         return $this->hasMany(Rank::class);
     }
+    
+    public function individualtag()
+    {
+        return $this->hasMany(IndividualTag::class);
+    }
 
 
 }

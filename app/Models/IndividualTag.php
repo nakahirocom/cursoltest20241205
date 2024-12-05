@@ -5,19 +5,20 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class LabelStorages extends Model
+class IndividualTag extends Model
 {
     use HasFactory;
-    protected $table = 'label_storages';
+    protected $table = 'individual_tags';
+
 
     public function smallLabel()
     {
         return $this->belongsTo(SmallLabel::class);
     }
 
-    public function user()
+    public function labelStorage()
     {
-        return $this->belongsTo(User::class);
+        return $this->hasMany(LabelStorages::class);
     }
 
 }

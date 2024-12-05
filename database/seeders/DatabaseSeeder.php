@@ -24,9 +24,9 @@ class DatabaseSeeder extends Seeder
             QuestionSeeder::class,
             AnswerResultsSeeder::class,
             KaizenSeeder::class,
-            MymemoSeeder::class
-
-
+            MymemoSeeder::class,
+            CommonTagSeeder::class,
+            individualTagSeeder::class
 
         ]);
         // \App\Models\User::factory()->create([
