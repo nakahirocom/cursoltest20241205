@@ -24,6 +24,7 @@ class CreateController extends Controller
         // データベースへの保存
         $question = new Question;
         $question->user_id = $request->userId();
+        $question->status = $request->input('status'); // statusの値を取得して設定
         $question->small_label_id = $request->small_label_id;
         $question->question = $request->question();
         $question->question_path = $request->question_path();

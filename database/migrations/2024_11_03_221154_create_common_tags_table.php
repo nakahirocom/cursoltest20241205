@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('common_tags', function (Blueprint $table) {
             $table->id();
+            // common_tagsテーブルにsmall_label_idを追加
+            $table->unsignedBigInteger('small_label_id');
+            // common_tagsテーブルのindividualtagカラムにsmall_labelsテーブルのidカラムを関連づける
+            $table->foreign('small_label_id')->references('id')->on('small_labels')->onDelete('cascade');
+
             $table->string('commontag');
             $table->timestamps();
         });

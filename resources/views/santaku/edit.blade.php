@@ -156,7 +156,7 @@
       <p style="coler: red;">{{ $message }}</p>
       @enderror
       <br />
-      <span>comment_path：{{ $question->comment_path }}</span>
+      <span>編集前のcomment_path：{{ $question->comment_path }}</span>
       <br />
       <img src="{{ $question->comment_path }}">
 
@@ -169,9 +169,26 @@
       <input type="text" name="comment_path" class="form-control" value="{{ $question->comment_path }}">
 
 
-      <span>reference_url：{{ $question->reference_url }}</span>
+      <span>編集前のreference_url：{{ $question->reference_url }}</span>
       <input type="text" name="reference_url" class="form-control" value="{{ $question->reference_url }}">
 
+      <span>編集前のステータス：
+        @if($question->status === 0)
+          今も使える
+        @elseif($question->status === 1)
+          審査中
+        @elseif($question->status === 2)
+          削除予定
+        @else
+          不明
+        @endif
+      </span>
+      <select name="status" id="status" class="form-control mt-2">
+        <option value="">選択してください</option>
+        <option value="0" {{ $question->status === 0 ? 'selected' : '' }}>今も使える</option>
+        <option value="1" {{ $question->status === 1 ? 'selected' : '' }}>審査中</option>
+        <option value="2" {{ $question->status === 2 ? 'selected' : '' }}>削除予定</option>
+      </select>
 
       <br />
 

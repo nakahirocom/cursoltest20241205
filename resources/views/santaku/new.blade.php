@@ -141,6 +141,15 @@
       <input type="text" name="reference_url" class="form-control" placeholder="参考URLあれば" value="{{ old('reference_url') }}">
 
       <br/>
+      <label for="status" class="block font-bold mt-4">今も使えるor審査中。を選択</label>
+      <select name="status" id="status" class="form-control mt-2">
+        <option value="">選択してください</option>
+        <option value="0">今も使える</option>
+        <option value="1">審査中</option>
+      </select>
+      @error('status')
+      <p class="text-red-500">{{ $message }}</p>
+      @enderror
 
       <div class="text-center">
         <button type="submit"

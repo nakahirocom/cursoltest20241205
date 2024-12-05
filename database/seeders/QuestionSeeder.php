@@ -12,6 +12,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 2,
             'user_id' => 1,
+            'status' => 0,
             'question' => "1+1=",
             'question_path' => null,
             'answer' => "2",
@@ -23,6 +24,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 2,
             'user_id' => 1,
+            'status' => 0,
             'question' => "2+1=",
             'question_path' => null,
             'answer' => "3",
@@ -34,6 +36,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 3,
             'user_id' => 1,
+            'status' => 0,
             'question' => "3+1=",
             'question_path' => null,
             'answer' => "4",
@@ -45,6 +48,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 4,
             'user_id' => 1,
+            'status' => 0,
             'question' => "4+1=",
             'question_path' => null,
             'answer' => "5",
@@ -56,6 +60,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 4,
             'user_id' => 1,
+            'status' => 0,
             'question' => "5+1=",
             'question_path' => null,
             'answer' => "6",
@@ -67,6 +72,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 4,
             'user_id' => 1,
+            'status' => 0,
             'question' => "1-1=",
             'question_path' => null,
             'answer' => "0",
@@ -78,6 +84,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 4,
             'user_id' => 1,
+            'status' => 0,
             'question' => "2-1=",
             'question_path' => null,
             'answer' => "1",
@@ -89,6 +96,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 5,
             'user_id' => 1,
+            'status' => 0,
             'question' => "3-1=",
             'question_path' => null,
             'answer' => "2",
@@ -100,6 +108,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 5,
             'user_id' => 1,
+            'status' => 0,
             'question' => "4-1=",
             'question_path' => null,
             'answer' => "3",
@@ -111,6 +120,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 5,
             'user_id' => 1,
+            'status' => 0,
             'question' => "5-1=",
             'question_path' => null,
             'answer' => "4",
@@ -122,6 +132,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 5,
             'user_id' => 1,
+            'status' => 0,
             'question' => "明日",
             'question_path' => null,
             'answer' => "あした",
@@ -133,6 +144,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 5,
             'user_id' => 1,
+            'status' => 0,
             'question' => "今日",
             'question_path' => null,
             'answer' => "きょう",
@@ -144,6 +156,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 5,
             'user_id' => 1,
+            'status' => 0,
             'question' => "昨日",
             'question_path' => null,
             'answer' => "きのう",
@@ -155,6 +168,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 5,
             'user_id' => 1,
+            'status' => 0,
             'question' => "明後日",
             'question_path' => null,
             'answer' => "あさって",
@@ -166,6 +180,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 5,
             'user_id' => 1,
+            'status' => 0,
             'question' => "一昨日",
             'question_path' => null,
             'answer' => "おととい",
@@ -177,6 +192,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 5,
             'user_id' => 1,
+            'status' => 0,
             'question' => "鬼の目にも〇〇",
             'question_path' => null,
             'answer' => "涙",
@@ -188,6 +204,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 5,
             'user_id' => 1,
+            'status' => 0,
             'question' => "一寸先は〇〇",
             'question_path' => null,
             'answer' => "闇",
@@ -199,6 +216,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 5,
             'user_id' => 1,
+            'status' => 0,
             'question' => "〇〇も方便",
             'question_path' => null,
             'answer' => "嘘",
@@ -210,6 +228,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 5,
             'user_id' => 1,
+            'status' => 0,
             'question' => "海老で〇〇を釣る",
             'question_path' => null,
             'answer' => "鯛",
@@ -221,6 +240,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 5,
             'user_id' => 1,
+            'status' => 0,
             'question' => "〇〇に金棒",
             'question_path' => null,
             'answer' => "鬼",
@@ -232,6 +252,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 5,
             'user_id' => 1,
+            'status' => 0,
             'question' => "税引後当期純利益は別表〇〇で行う",
             'question_path' => null,
             'answer' => "四",
@@ -243,6 +264,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 5,
             'user_id' => 1,
+            'status' => 0,
             'question' => "欠損金の確認は別表〇〇で行う",
             'question_path' => null,
             'answer' => "七",
@@ -254,6 +276,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 5,
             'user_id' => 1,
+            'status' => 0,
             'question' => "法人税の計算は別表〇〇で行う",
             'question_path' => null,
             'answer' => "一",
@@ -265,6 +288,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 5,
             'user_id' => 1,
+            'status' => 0,
             'question' => "交際費の損金不算入は別表〇〇で行う",
             'question_path' => null,
             'answer' => "八",
@@ -276,6 +300,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 5,
             'user_id' => 1,
+            'status' => 0,
             'question' => "減価償却の記載は別表〇〇で行う",
             'question_path' => null,
             'answer' => "十六",
@@ -287,6 +312,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 6,
             'user_id' => 1,
+            'status' => 0,
             'question' => "交際費は原則、〇〇。",
             'question_path' => null,
             'answer' => "損金不算入",
@@ -298,6 +324,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 6,
             'user_id' => 1,
+            'status' => 0,
             'question' => "飲食1人当り5千円〇〇は交際費から除外する",
             'question_path' => null,
             'answer' => "未満",
@@ -309,6 +336,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 6,
             'user_id' => 1,
+            'status' => 0,
             'question' => "期末資本金1億円〇〇の法人は接待交際費の50%が損金となる。",
             'question_path' => null,
             'answer' => "超",
@@ -320,6 +348,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 6,
             'user_id' => 1,
+            'status' => 0,
             'question' => "個人事業主の交際費の上限額は〇〇",
             'question_path' => null,
             'answer' => "ない",
@@ -331,6 +360,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 6,
             'user_id' => 1,
+            'status' => 0,
             'question' => "期末資本金1億円以下の法人の交際費定額控除限度額は〇〇万円",
             'question_path' => null,
             'answer' => "800",
@@ -342,6 +372,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 7,
             'user_id' => 1,
+            'status' => 0,
             'question' => "不動産仲介収入の課税区分は",
             'question_path' => null,
             'answer' => "課税売上",
@@ -353,6 +384,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 7,
             'user_id' => 1,
+            'status' => 0,
             'question' => "住宅家賃収入の課税区分は",
             'question_path' => null,
             'answer' => "非課税売上",
@@ -364,6 +396,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 7,
             'user_id' => 1,
+            'status' => 0,
             'question' => "外国貨物の譲渡収入の課税区分は",
             'question_path' => null,
             'answer' => "輸出免税",
@@ -375,6 +408,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 7,
             'user_id' => 1,
+            'status' => 0,
             'question' => "配当金収入の課税区分は",
             'question_path' => null,
             'answer' => "不課税取引",
@@ -386,6 +420,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 7,
             'user_id' => 1,
+            'status' => 0,
             'question' => "新聞掲載料の課税区分は",
             'question_path' => null,
             'answer' => "課税仕入",
@@ -397,6 +432,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 8,
             'user_id' => 1,
+            'status' => 0,
             'question' => "消費税法の施行地を〇〇という",
             'question_path' => null,
             'answer' => "国内",
@@ -408,6 +444,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 8,
             'user_id' => 1,
+            'status' => 0,
             'question' => "事業を行う個人を〇〇という",
             'question_path' => null,
             'answer' => "個人事業主",
@@ -419,6 +456,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 8,
             'user_id' => 1,
+            'status' => 0,
             'question' => "個人事業者及び法人を〇〇という",
             'question_path' => null,
             'answer' => "事業者",
@@ -430,6 +468,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 8,
             'user_id' => 1,
+            'status' => 0,
             'question' => "合併により消滅した法人を〇〇という",
             'question_path' => null,
             'answer' => "被合併法人",
@@ -441,6 +480,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 8,
             'user_id' => 1,
+            'status' => 0,
             'question' => "法人でない社団又は財団で代表者又は管理人の定めのあるものを〇〇という",
             'question_path' => null,
             'answer' => "人格のない社団等",
@@ -452,6 +492,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 9,
             'user_id' => 1,
+            'status' => 0,
             'question' => "9月8日引落しに間に合う月次報酬以外の案件承認期限は〇〇まで",
             'question_path' => null,
             'answer' => "7月15日",
@@ -463,6 +504,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 9,
             'user_id' => 1,
+            'status' => 0,
             'question' => "9月8日引落しに間に合う決算報酬の案件承認期限は〇〇まで",
             'question_path' => null,
             'answer' => "7月末",
@@ -474,6 +516,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 9,
             'user_id' => 1,
+            'status' => 0,
             'question' => "9月8日引落しに間に合う月次報酬の案件承認期限は〇〇まで",
             'question_path' => null,
             'answer' => "8月15日",
@@ -485,6 +528,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 9,
             'user_id' => 1,
+            'status' => 0,
             'question' => "9月1日に月次報酬の請求書を郵送するための案件承認期限は〇〇まで",
             'question_path' => null,
             'answer' => "8月15日",
@@ -496,6 +540,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 9,
             'user_id' => 1,
+            'status' => 0,
             'question' => "8月1日に決算報酬の請求書を郵送するための案件承認期限は〇〇まで",
             'question_path' => null,
             'answer' => "7月15日",
@@ -507,6 +552,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "リンクがマスターソードを抜く場所はどこですか？",
             'question_path' => null,
             'answer' => "コログの森",
@@ -518,6 +564,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "リンクがハイラル全土を旅する際に頼りにする古代の地図を表示するアイテムは何ですか？",
             'question_path' => null,
             'answer' => "シーカーストーン",
@@ -529,6 +576,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 1,
             'question' => "ゲーム内でリンクが出会う、鳥人族のリーダーの名前は何ですか？",
             'question_path' => null,
             'answer' => "レヴァリ",
@@ -540,6 +588,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "リンクが料理をする際に使う設備の名前は何ですか？",
             'question_path' => null,
             'answer' => "かまど",
@@ -551,6 +600,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "ゲーム中にリンクが訪れることができる、雪が降る山の名前は何ですか？",
             'question_path' => null,
             'answer' => "ヘブラ山",
@@ -562,6 +612,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 1,
             'question' => "ブレス オブ ザ ワイルドでリンクが使用できる特別な力を与える祠の名前は何ですか？",
             'question_path' => null,
             'answer' => "チカ祠",
@@ -584,6 +635,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "ブレス オブ ザ ワイルドでリンクが乗ることができる伝説の馬の名前は何ですか？",
             'question_path' => null,
             'answer' => "エポナ",
@@ -595,6 +647,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 1,
             'question' => "ブレス オブ ザ ワイルドに登場する青いローブを着た商人の名前は何ですか？",
             'question_path' => null,
             'answer' => "ビート",
@@ -606,6 +659,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "ブレス オブ ザ ワイルドでリンクが集めることができる黄色い果実は何ですか？",
             'question_path' => null,
             'answer' => "コログのミ",
@@ -617,6 +671,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "ゲーム内でリンクが空を飛ぶのに使うアイテムは何ですか？",
             'question_path' => null,
             'answer' => "パラセール",
@@ -628,6 +683,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "リンクが最初に目覚める場所の名前は何ですか？",
             'question_path' => null,
             'answer' => "復活の祠",
@@ -639,6 +695,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "ハイラル王国の王女の名前は何ですか？",
             'question_path' => null,
             'answer' => "ゼルダ",
@@ -650,6 +707,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 1,
             'question' => "リンクが集めるものの一つで象の形をしている神獣の名前は？",
             'question_path' => null,
             'answer' => "ヴァ・ルーダ",
@@ -661,6 +719,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "ゲーム内で唯一の黄金のライネルが出現する場所はどこですか？",
             'question_path' => null,
             'answer' => "コログの森の北",
@@ -672,6 +731,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "「ゲルドの町」に入るためにリンクが装着する必要がある服は何ですか？",
             'question_path' => null,
             'answer' => "ヴァイの服",
@@ -683,6 +743,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "ゲーム内でリンクが祠を発見するのを助けるアイテムは何ですか？",
             'question_path' => null,
             'answer' => "シーカーセンサー",
@@ -694,6 +755,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "ゲーム内でリンクが「炎のドラゴン」に会える場所はどこですか？",
             'question_path' => null,
             'answer' => "エルディン山",
@@ -705,6 +767,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "ゲーム内で「ロード・オブ・ザ・マウンテン」として知られる神秘的な生き物はどこで見つけることができますか？",
             'question_path' => null,
             'answer' => "サトリ山",
@@ -716,6 +779,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 1,
             'question' => "リンクが「雷のガノン」に対峙するために訪れる神獣の名前は何ですか？",
             'question_path' => null,
             'answer' => "ヴァ・ナボリス",
@@ -727,6 +791,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "リンクから常に逃げる小さな森の精霊は何ですか？",
             'question_path' => null,
             'answer' => "コログ",
@@ -738,6 +803,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "赤い鱗を持つ火の龍で、炎を操る力を持っている三大龍は？",
             'question_path' => null,
             'answer' => "オルドラ",
@@ -749,6 +815,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 1,
             'question' => "青い鱗を持つ氷の龍で、氷を操る力を持っている三大龍は？",
             'question_path' => null,
             'answer' => "ナドラー",
@@ -760,6 +827,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 1,
             'question' => "黄金色の鱗を持つ雷の龍で、雷を操る力を持っている三題龍は？",
             'question_path' => null,
             'answer' => "ファロシュ",
@@ -771,6 +839,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 1,
             'question' => "リンクにパラグライダーを与える、謎めいた老人の正体は誰ですか？",
             'question_path' => null,
             'answer' => "キング・ロム",
@@ -782,6 +851,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 1,
             'question' => "フィローネ地方に住む、リンクに「雷のガノン」について情報を提供する鳥人族の女性の名前は何ですか？",
             'question_path' => null,
             'answer' => "レッタ",
@@ -793,6 +863,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 1,
             'question' => "ゲーム内でリンクに「水の神獣ヴァ・ルッタ」の攻略方法を教えるゾーラ族の王子の名前は何ですか？",
             'question_path' => null,
             'answer' => "シドン",
@@ -804,6 +875,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "ハイラル王国の歴史を研究している、若返りをしたシーカー族の老婆の名前は何ですか？",
             'question_path' => null,
             'answer' => "プルア",
@@ -815,6 +887,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "ミニチャレンジ「消えたコッコちゃん」イベントが発生する場所はどこですか？",
             'question_path' => null,
             'answer' => "カカリコ村",
@@ -826,6 +899,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 10,
             'user_id' => 1,
+            'status' => 0,
             'question' => "ミニチャレンジ「雷怖い」イベントで馬宿のてっぺんから回収するものは？",
             'question_path' => null,
             'answer' => "木こりのオノ",
@@ -838,6 +912,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 11,
             'user_id' => 1,
+            'status' => 0,
             'question' => "単一条件でカラムと一致するデータを絞り込むメソッドは",
             'question_path' => null,
             'answer' => "where()",
@@ -849,6 +924,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 11,
             'user_id' => 1,
+            'status' => 0,
             'question' => "複数条件でカラムと一致するデータを絞り込むメソッドは",
             'question_path' => null,
             'answer' => "whereIn()",
@@ -860,6 +936,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 11,
             'user_id' => 1,
+            'status' => 0,
             'question' => "複数条件の間にあるカラムのデータを取得するメソッドは",
             'question_path' => null,
             'answer' => "whereBetween()",
@@ -871,6 +948,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 11,
             'user_id' => 1,
+            'status' => 0,
             'question' => "データ中身を表示し、その場で処理を終了させる",
             'question_path' => null,
             'answer' => "dd()",
@@ -882,6 +960,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 11,
             'user_id' => 1,
+            'status' => 0,
             'question' => "データの中身を表示しつつ、処理が終了にならない",
             'question_path' => null,
             'answer' => "dump()",
@@ -893,6 +972,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 12,
             'user_id' => 1,
+            'status' => 0,
             'question' => "FROMの次の優先クエリは〇〇",
             'question_path' => null,
             'answer' => "ON・JOIN",
@@ -904,6 +984,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 12,
             'user_id' => 1,
+            'status' => 0,
             'question' => "ON・JOINの次の優先クエリは〇〇",
             'question_path' => null,
             'answer' => "WHERE",
@@ -915,6 +996,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 12,
             'user_id' => 1,
+            'status' => 0,
             'question' => "WHEREの次の優先クエリは〇〇",
             'question_path' => null,
             'answer' => "GROUP BY",
@@ -926,6 +1008,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 12,
             'user_id' => 1,
+            'status' => 0,
             'question' => "GROUP BYの次の優先クエリは〇〇",
             'question_path' => null,
             'answer' => "COUNT・SUM・SUM・AVG・MIN",
@@ -937,6 +1020,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             'small_label_id' => 12,
             'user_id' => 1,
+            'status' => 0,
             'question' => "HAVINGの次の優先クエリは〇〇",
             'question_path' => null,
             'answer' => "/SELECT・DISTINT",
